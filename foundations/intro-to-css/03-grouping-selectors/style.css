@@ -1,1 +1,16 @@
-/* Add CSS Styling */
+/* Instead of creating a class for common properties and two IDs for unique
+    properties, just create two classes and group the common properties */
+
+.default,
+.attention-seeking {
+    font-size: 28px;
+    font-family: Helvetica, 'Times New Roman', sans-serif;
+}
+.default {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.803);
+}
+.attention-seeking {
+    color: black;
+    background-color: rgb(223, 223, 36);
+}
