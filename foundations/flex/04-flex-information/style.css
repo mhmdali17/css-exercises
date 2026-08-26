@@ -10,6 +10,33 @@ img {
 .title {
   font-size: 36px;
   font-weight: 900;
+  text-align: center;
+}
+
+.parent-container {
+  display: flex;
+  flex-direction: column;
+  margin: 32px 48px;
+}
+
+ /* Big Mistake: Should not have separated images and their descriptions. The 
+      should be a single unit inside a div container, so essentially four div containers
+      each having an image and its description */
+
+.images-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 0px 52px;
+}
+
+.text-container {
+  display: flex;
+  justify-content: space-around;
+  gap: 24px;
+}
+
+.text {
+  margin: 8px 32px;
 }
 
 /* do not edit this footer */
