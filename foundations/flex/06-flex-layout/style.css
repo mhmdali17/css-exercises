@@ -5,6 +5,9 @@ body {
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 img {
@@ -23,4 +26,47 @@ input {
   border-radius: 16px;
   padding: 8px 24px;
   width: 400px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(226, 226, 226);
+  padding: 12px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  padding: 6px 12px;
+  margin: 12px 6px; /* why aren't you using gap on the container?? */
+}
+
+a {
+  text-decoration: none;
+  color: rgb(109, 109, 109);
+  padding: 4px;
+  margin: 8px;
+}
+
+.left-links,
+.right-links {
+  display: flex;
 }
